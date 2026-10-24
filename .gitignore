@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+fieldverify-out/
+*.zip
+.venv/
+dist/
+*.egg-info/
