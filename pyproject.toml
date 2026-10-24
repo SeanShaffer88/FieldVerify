@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fieldverify"
+version = "0.1.0"
+description = "On-machine verification runner: JSON checklists, evidence bundles, stdlib only"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sean Shaffer" }]
+keywords = ["verification", "checklist", "smoke-test", "windows", "evidence"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[project.scripts]
+fieldverify = "fieldverify:main"
+
+[tool.setuptools]
+py-modules = ["fieldverify"]
